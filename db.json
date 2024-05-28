@@ -1,0 +1,88 @@
+{
+    "assignments": [
+        {
+            "name": "Read chapter 5",
+            "complete": false,
+            "id": 1,
+            "tag": "Reading"
+        },
+        { 
+            "name": "Finish Final Project",
+            "complete": false,
+            "id": 1,
+            "tag": "School"
+        },
+        { 
+            "name": "Finish SAE",
+            "complete": false,
+            "id": 2,
+            "tag": "School"
+        },
+        {
+            "name": "Turn in homework",
+            "complete": false,
+            "id": 3,
+            "tag": "School"
+        },
+        {
+            "name": "Write essay",
+            "complete": false,
+            "id": 4,
+            "tag": "Writing"
+        },
+        {
+            "name": "Study for exam",
+            "complete": false,
+            "id": 5,
+            "tag": "School"
+        },
+        {
+            "name": "Complete lab report",
+            "complete": false,
+            "id": 2,
+            "tag": "Science"
+        },
+        {
+            "name": "Prepare presentation",
+            "complete": false,
+            "id": 3,
+            "tag": "Presentation"
+        },
+        {
+            "name": "Read article",
+            "complete": false,
+            "id": 4,
+            "tag": "Reading"
+        },
+        {
+            "name": "Solve math problems",
+            "complete": false,
+            "id": 5,
+            "tag": "Math"
+        },
+        {
+            "name": "Practice coding",
+            "complete": false,
+            "id": 1,
+            "tag": "Programming"
+        },
+        {
+            "name": "Review notes",
+            "complete": false,
+            "id": 3,
+            "tag": "Study"
+        },
+        {
+            "name": "Finish book report",
+            "complete": false,
+            "id": 2,
+            "tag": "Writing"
+        },
+        {
+            "name": "Submit project proposal",
+            "complete": false,
+            "id": 4,
+            "tag": "Programming"
+        }
+    ]
+}

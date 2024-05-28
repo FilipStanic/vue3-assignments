@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In progress Assignments</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+</head>
+    <body class="h-full grid place-items-center">
+
+        <div id="app">
+
+            <!-- Section 1-->
+
+        <section v-if="inProgress.length">
+
+                <h2 class="font-semibold mb-3">In progress Assignments</h2>
+                <ul>
+                    <li v-for="assignment in inProgress"
+                        :key="assignment.id">
+                        <label>
+                            {{ assignment.name }}
+
+                            <input
+                            type="checkbox" 
+                            v-model="assignment.complete"
+                            class="ml-3">
+
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- Section 2-->
+
+
+            <section v-if="complitedTasks.length" class="mt-5">
+                <h2 class="font-semibold mb-3">Complete</h2>
+                <ul>
+                    <li v-for="task in complitedTasks"
+                        :key="task.id">
+                        <label>
+                            {{ task.name }}
+
+                            <input
+                            type="checkbox" 
+                            v-model="task.complete"
+                            class="ml-3">
+
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <script>
+
+            let app = {
+
+                data(){
+                    return {
+                        tasks : [
+                            { name: 'Finish Project', complete: false, id: 1 },
+                            { name: 'Finish SAE', complete: false, id: 2 },
+                            { name: 'Turn in homework', complete: true, id: 3 }
+                        ]
+                    }
+                },
+
+                computed: {
+                    inProgress(){
+                        return this.tasks.filter(task => ! task.complete);
+                    },
+                    complitedTasks(){
+                        return this.tasks.filter(task => task.complete);
+                    }
+                }
+
+
+            }
+
+            Vue.createApp(app).mount('#app');
+
+        </script>
+
+    </body>
+</html>
